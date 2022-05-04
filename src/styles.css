@@ -60,6 +60,10 @@ header {
 .header--website {
   text-decoration: none;
   color: white;
+  transition: all 0.3s;
+}
+.header--website:hover {
+  opacity: 0.8;
 }
 .header--job__title {
   margin-top: 0.3rem;
@@ -85,6 +89,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+.btn--lb:hover {
+  background: #486f9b;
+}
+.btn--secondary:hover {
+  background: #dcdcdc;
+}
 .btn--group {
   width: 100%;
   display: flex;
@@ -93,12 +103,14 @@ header {
 }
 .btn--secondary {
   background: var(--color--secondary);
+  transition: all 0.3s;
 }
 .btn--secondary a {
   color: var(--color--primary);
 }
 .btn--lb {
   background: #5093e2;
+  transition: all 0.3s;
 }
 .btn--lb a {
   color: var(--color--secondary);
@@ -137,7 +149,10 @@ header {
   display: flex;
   justify-content: space-evenly;
 }
-.social--bar > img {
-  height: 30px;
-  width: 30px;
+.social--bar > a {
+  transition: all 0.3s;
+}
+
+.social--bar > a:hover {
+  transform: scale(1.1);
 }
